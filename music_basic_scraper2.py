@@ -14,9 +14,6 @@ letters=["","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r",
 site = "http://governor.state.tx.us/music/musicians/talent/talent"
 
 
-    
-html = requests.get("http://governor.state.tx.us/music/musicians/talent/talent").content
-dom = lxml.html.fromstring(html)
 
 for letter in letters:
     newsite = site + letter
